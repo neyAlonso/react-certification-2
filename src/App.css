@@ -1,0 +1,63 @@
+.selectAnswers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+}
+
+form {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.answersBtn {
+  border: 1px solid green;
+  background-color: white;
+}
+
+.answersBtn:hover {
+  background-color:green;
+  transition: 0.7s;
+}
+
+.submitBtnVisible, .newQuizBtn {
+  background-color: grey;
+  color: white;
+  width: 600px;
+  height: 50px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.submitBtnNone {
+  display: none;
+}
+
+.finalScore {
+  position: relative;
+  display: block;
+  width: 600px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.centerContainer {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
