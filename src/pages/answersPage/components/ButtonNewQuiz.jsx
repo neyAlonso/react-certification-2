@@ -10,7 +10,7 @@ function ButtonNewQuiz() {
     }
 
     return (
-        <button className='newQuizBtn' onClick={handleOnClick}>
+        <button id='newQuizBtn' onClick={handleOnClick}>
             Create a new Quiz
         </button>
     )

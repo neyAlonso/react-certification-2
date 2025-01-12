@@ -15,9 +15,7 @@ function QuestionsPage() {
         </header>
 
         <main>
-          <div>
-            <Questions />
-          </div>
+          <Questions />
           <div className='centerContainer'>
             <SubmitButton />
           </div>

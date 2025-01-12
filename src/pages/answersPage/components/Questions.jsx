@@ -4,7 +4,7 @@ import QuestionAnswers from "./QuestionAnswers";
 function Questions({ questions, selectedAnswers, answers }) {
 
     return (
-        <div>
+        <div className="questionsContainer">
             {
                 questions.map((item, index) => (
                     <QuestionAnswers

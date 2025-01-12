@@ -25,11 +25,10 @@ function FinalScore({ selectedAnswers, questions }) {
     }
 
     return (
-        <div>
+        <div className="centerContainer">
             <span className='finalScore' style={styleScore(counterScore())}>
                 You scored {counterScore()} out of {questions.length}
             </span>
-
         </div>
     )
 }

@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { QuestionContext } from "../context/QuestionContext";
+import he from 'he'
 
 function QuestionAnswers({ question, index }) {
 
@@ -8,7 +9,7 @@ function QuestionAnswers({ question, index }) {
     return (
         <div>
             <div>
-                {question}
+                {he.decode(question)}
             </div>
             <div>
                 {
@@ -23,7 +24,7 @@ function QuestionAnswers({ question, index }) {
                                     {}
                             }
                         >
-                            {answer}
+                            {he.decode(answer)}
                         </button>
                     ))
                 }

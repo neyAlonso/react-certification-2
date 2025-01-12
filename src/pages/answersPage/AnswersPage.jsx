@@ -17,19 +17,15 @@ function AnswersPage() {
             </header>
 
             <main>
-                <div>
-                    <Questions
-                        selectedAnswers={location.state.selectedAnswers}
-                        questions={location.state.questions}
-                        answers={ location.state.answers}
-                    />
-                </div>
-                <div>
-                    <FinalScore
-                        selectedAnswers={location.state.selectedAnswers}
-                        questions={location.state.questions}
-                    />
-                </div>
+                <Questions
+                    selectedAnswers={location.state.selectedAnswers}
+                    questions={location.state.questions}
+                    answers={ location.state.answers}
+                />
+                <FinalScore
+                    selectedAnswers={location.state.selectedAnswers}
+                    questions={location.state.questions}
+                />
                 <div className="centerContainer">
                     <ButtonNewQuiz />
                 </div>

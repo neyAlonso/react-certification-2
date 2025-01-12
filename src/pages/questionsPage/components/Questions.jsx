@@ -7,7 +7,7 @@ function Questions() {
     const { questions } = useContext(QuestionContext)
 
     return (
-        <div>
+        <div className="questionsContainer">
             {
                 questions.map((item, index) => (
                     <QuestionAnswers

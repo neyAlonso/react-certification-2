@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import he from 'he'
 
 function QuestionAnswers({ question, answers, index, selectedAnswers, correctAnswer}) {
 
@@ -19,7 +20,7 @@ function QuestionAnswers({ question, answers, index, selectedAnswers, correctAns
     return (
         <div>
             <div>
-                {question}
+                {he.decode(question)}
             </div>
             <div>
                 {
@@ -32,7 +33,7 @@ function QuestionAnswers({ question, answers, index, selectedAnswers, correctAns
                                     styleButton(answer)
                                 }
                             >
-                                {answer}
+                                {he.decode(answer)}
                             </button>
                         )
                     })
